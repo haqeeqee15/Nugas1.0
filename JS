@@ -1,1 +1,49 @@
+// Inisialisasi variabel
+let a = 0;
+let b = 0;
+let operator = "";
 
+// Membaca input dari pengguna
+a = prompt("Masukkan bilangan pertama: ");
+operator = prompt("Masukkan operator: ");
+b = prompt("Masukkan bilangan kedua: ");
+
+// Perhitungan
+switch (operator) {
+  case "+":
+    a += b;
+    break;
+  case "-":
+    a -= b;
+    break;
+  case "*":
+    a *= b;
+    break;
+  case "/":
+    a /= b;
+    break;
+  case "^":
+    a = Math.pow(a, b);
+    break;
+  case "ln":
+    a = Math.log(a);
+    break;
+  case "e^":
+    a = Math.exp(a);
+    break;
+  case "sin":
+    a = Math.sin(a);
+    break;
+  case "cos":
+    a = Math.cos(a);
+    break;
+  case "tan":
+    a = Math.tan(a);
+    break;
+  default:
+    alert("Operator tidak valid.");
+    break;
+}
+
+// Output
+alert("Hasilnya adalah: " + a);
